@@ -6,6 +6,10 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.header{
+    border-bottom: 2px solid black;
+    width: 100%;
+}
 h1{
     color:indianred;
     display: flex;
@@ -14,4 +18,5 @@ h1{
 h2{
     color: blue;
     background-color: lightgray;
+    padding: 6px;
 }
