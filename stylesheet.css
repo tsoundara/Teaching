@@ -1,0 +1,17 @@
+body {
+    background-color: bisque;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color:indianred;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color: blue;
+    background-color: lightgray;
+}
