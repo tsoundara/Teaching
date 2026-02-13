@@ -1,23 +1,45 @@
 body {
     background-color: bisque;
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    .header{
+        color: tomato;
+        text-align: center;
+    }
+
 }
-.header{
-    border-bottom: 2px solid black;
-    width: 100%;
+
+.stepContent {
+    font-size: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    padding: 0 20px; 
+    background-color: white;
 }
-h1{
-    color:indianred;
+
+.icon{
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+.stepHeader {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    cursor: pointer;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
 }
-h2{
-    color: blue;
-    background-color: lightgray;
-    padding: 6px;
-    border-radius: 10px;
+
+.stepDropdown.active .stepContent {
+    max-height: 1000px; 
+    padding: 20px; 
+    border-bottom: 1px solid white;
+}
+
+.stepDropdown.active .icon {
+    transform: rotate(45deg);
 }
