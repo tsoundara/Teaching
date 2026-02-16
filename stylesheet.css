@@ -1,5 +1,4 @@
 body {
-    background-color: bisque;
     font-family: 'Franklin Gothic Medium', sans-serif;
     display: flex;
     flex-direction: column;
@@ -11,13 +10,25 @@ body {
 
 }
 
+
+
 .stepContent {
     font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease;
     padding: 0 20px; 
     background-color: white;
+
+    .stepImage {
+        margin-top: 10px;
+        max-width: 300px;
+        height: 300px;
+    }
 }
 
 .icon{
@@ -26,6 +37,7 @@ body {
 }
 .stepHeader {
     background-color: #f1f1f1;
+    color: rgb(136, 103, 91);
     padding: 10px 20px;
     cursor: pointer;
     display: flex;
