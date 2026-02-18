@@ -91,10 +91,3 @@ body {
     background-color: #218838;
 }
 
-#pointer {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 30px;
-    animation: bounce 1s infinite;
-}
