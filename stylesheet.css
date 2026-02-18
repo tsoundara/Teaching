@@ -15,6 +15,11 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
+
+    .displayName {
+        font-size: 24px;
+        font-weight: bold;
+    }
 }
 
 #userName {
@@ -97,10 +102,5 @@ body {
 
 #zoomBtn:hover {
     background-color: #218838;
-}
-
-.finished{
-    text-align: center;
-    padding: 20px;
 }
 
