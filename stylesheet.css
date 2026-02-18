@@ -2,14 +2,13 @@ body {
     font-family: 'Franklin Gothic Medium', sans-serif;
     display: flex;
     flex-direction: column;
-
-    .header{
-        color: tomato;
-        text-align: center;
-    }
-
+    padding-bottom:30px;
 }
 
+.header{
+        color: tomato;
+        text-align: center;
+}
 
 
 .stepContent {
@@ -23,13 +22,14 @@ body {
     transition: max-height 0.3s ease-out, padding 0.3s ease;
     padding: 0 20px; 
     background-color: white;
+}
 
-    .stepImage {
-        margin-top: 10px;
-        max-width: 300px;
-        height: 300px;
-        border-radius: 20px;
-    }
+.stepImage {
+    width: 200px; 
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    margin: 10px;
+    border-radius: 8px;
+    height: auto; 
 }
 
 .icon{
@@ -59,4 +59,31 @@ body {
 
 .stepDropdown.active .icon {
     transform: rotate(45deg);
+}
+
+.stepImage.large {
+    width: 600px; 
+}
+
+
+#zoomBtn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#zoomBtn:hover {
+    background-color: #218838;
+}
+
+#pointer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    animation: bounce 1s infinite;
 }

@@ -14,3 +14,19 @@ headers.forEach(header => {
         }
     });
 });
+
+const zoomBtn = document.getElementById('zoomBtn');
+const allImages = document.querySelectorAll('.stepImage');
+
+zoomBtn.addEventListener('click', () => {
+    allImages.forEach(img => {
+        img.classList.toggle('large');
+    });
+});
+
+const pointer = document.getElementById('pointer');
+
+document.addEventListener('mousemove', (e) => {
+    pointer.style.left = e.clientX + 'px';
+    pointer.style.top = e.clientY + 'px';
+});
