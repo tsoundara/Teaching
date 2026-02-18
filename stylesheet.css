@@ -6,10 +6,22 @@ body {
 }
 
 .header{
-        color: tomato;
-        text-align: center;
+    color: tomato;
+    text-align: center;
 }
 
+.welcome{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#userName {
+    padding: 8px;
+    border: 2px solid tomato;
+    border-radius: 5px;
+}
 
 .stepContent {
     font-size: 20px;
@@ -26,7 +38,6 @@ body {
 
 .stepImage {
     width: 200px; 
-    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     margin: 10px;
     border-radius: 8px;
     height: auto; 

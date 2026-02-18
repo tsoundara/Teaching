@@ -24,9 +24,13 @@ zoomBtn.addEventListener('click', () => {
     });
 });
 
-const pointer = document.getElementById('pointer');
+const nameInput = document.getElementById('userName');
+const displayName = document.getElementById('displayName');
 
-document.addEventListener('mousemove', (e) => {
-    pointer.style.left = e.clientX + 'px';
-    pointer.style.top = e.clientY + 'px';
-});
+if (nameInput && displayName) {
+    nameInput.addEventListener('input', (event) => {
+        const name = event.target.value;
+        // If the input is empty, reset to default; otherwise, show the name
+        displayName.textContent = name.length > 0 ? name : "Origami Master";
+    });
+}
