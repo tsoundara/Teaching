@@ -10,24 +10,6 @@ body {
     text-align: center;
 }
 
-.welcome{
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-
-    .displayName {
-        font-size: 24px;
-        font-weight: bold;
-    }
-}
-
-#userName {
-    padding: 8px;
-    border: 2px solid tomato;
-    border-radius: 5px;
-}
-
 .stepContent {
     font-size: 20px;
     align-items: center;
@@ -104,3 +86,19 @@ body {
     background-color: #218838;
 }
 
+
+body.darkMode {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+body.darkMode .stepHeader, 
+body.darkMode .stepContent {
+    background-color: #222 !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+body.darkMode .header h1 {
+    color: #ff8a65 !important;
+}

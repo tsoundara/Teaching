@@ -24,13 +24,25 @@ zoomBtn.addEventListener('click', () => {
     });
 });
 
-const nameInput = document.getElementById('userName');
-const displayName = document.getElementById('displayName');
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("darkMode");
+}
 
-if (nameInput && displayName) {
-    nameInput.addEventListener('input', (event) => {
-        const name = event.target.value;
-        // If the input is empty, reset to default; otherwise, show the name
-        displayName.textContent = name.length > 0 ? name : "Origami Master";
+
+const darkModeBtn = document.getElementById('darkModeToggle');
+
+// Check if button exists to avoid errors
+if (darkModeBtn) {
+    darkModeBtn.addEventListener('click', () => {
+        // This one line handles the whole switch!
+        document.body.classList.toggle('darkMode');
+        
+        // Optional: change the button text so the user knows what happened
+        if (document.body.classList.contains('darkMode')) {
+            darkModeBtn.textContent = "☀️ Light Mode";
+        } else {
+            darkModeBtn.textContent = "🌙 Dark Mode";
+        }
     });
 }
